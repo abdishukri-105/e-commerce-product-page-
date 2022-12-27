@@ -1,11 +1,15 @@
+body {
+  padding-left: 150px;
+  padding-right: 150px;
+}
 
 nav {
   display: flex;
   align-items: center;
    justify-content: space-between; 
   padding: 20px; 
-  margin-top: 10px;
-  margin-left: 100px;
+  top: 0;
+  bottom: 0;
   border-bottom: 1px solid black;
 }
 
@@ -43,6 +47,10 @@ a {
   font-size: 16px;
 }
 
+li:hover {
+    border-bottom: 2px solid rgb(179, 11, 11);
+  }
+
 .nav-cart {
     display: flex;
     align-items: center;
@@ -53,4 +61,82 @@ a {
     margin: 0 10px;
   }
 
- 
+  .footer {
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px; 
+    /* border-top:1px solid black ; */
+    display: flex;
+    justify-content: space-evenly;
+  }
+ .footer p a {
+    font-weight: bold;
+ }
+
+/* main section */
+
+main {
+    display: flex;
+    margin-top: 50px;
+
+}
+
+ /* light house */
+.lightbox-section, .description{
+    flex: 1;
+}
+
+
+.price {
+    display: flex;
+    justify-content: flex-start; 
+}
+.price h4 {
+    margin-right: 8px;
+ }
+
+.counter {
+    margin-top: 0;
+    display: flex;
+
+}
+.count {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0; 
+
+}
+
+.count  p {
+    margin-left: 24px;
+   
+}
+ .count, .add-cart {
+    flex: 1;
+}
+
+
+button {
+    background-color: rgb(227, 214, 199); 
+    border: none;
+    color: black; 
+    padding: 18px 32px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 10% 10%;
+  }
+
+
+  
+  
+  
+  
+  
+  
