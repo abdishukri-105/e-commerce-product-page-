@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- <link rel="stylesheet" href="styles/bootstrap.css"> -->
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="sty.css">
   <title>E-commerce product page</title>
   <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -54,77 +55,64 @@
   </nav>
 <main>
 
-    <div class="lightbox-section">
-      <!-- Images used to open the lightbox -->
-<div class="row">
-    <div class="column">
-      <img src="./images/" onclick="openModal();currentSlide(1)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-    </div>
-  </div>
+<div class="lightbox-section">
   
-  <!-- The Modal/Lightbox -->
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="lightbox">
     <div class="modal-content">
-  
-      <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
-        <img src="img1_wide.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
-        <img src="img2_wide.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
-        <img src="img3_wide.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">4 / 4</div>
-        <img src="img4_wide.jpg" style="width:100%">
-      </div>
-  
-      <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-      <!-- Caption text -->
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-  
-      <!-- Thumbnail image controls -->
-      <div class="column">
-        <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
-      </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/image-product-1.jpg">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/image-product-2.jpg">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/image-product-3.jpg">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/image-product-4.jpg">
+        </div>
     </div>
-  </div>
+        <!-- Next/previous controls -->
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    
+  
+    
+        <!-- Thumbnail image controls -->
+      <div class="underscroll">
+          <div class="column">
+              <img class="demo" src="images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)" alt="Nature">
+          </div>
+      
+          <div class="column">
+              <img class="demo" src="images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)" alt="Snow">
+          </div>
+      
+          <div class="column">
+              <img class="demo" src="images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)" alt="Mountains">
+          </div>
+      
+          <div class="column">
+              <img class="demo" src="images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)" alt="Lights">
+          </div>
+      </div>
+    
+   </div> 
 
-    </div>
+
+
+
+
+
+</div>
     
     <div class="description">
      
@@ -138,7 +126,7 @@
      </p>
      
       <div class="price">
-        <h4>$125.00 </h4>
+        <h3>$125.00 </h3>
          <h4>50%</h4>
       </div>
 
@@ -163,9 +151,6 @@
 
 
 </main>
-
-
-
 
   <div class="footer">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
