@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!-- <link rel="stylesheet" href="styles/bootstrap.css"> -->
+  <link rel="stylesheet" href="styles/bootstrap.css"> 
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="sty.css">
   <title>E-commerce product page</title>
@@ -15,141 +15,111 @@
 </head>
 <body>
 
-  <!-- Collections
-  Men
-  Women
-  About
-  Contact
+<!-- nav section -->
+<nav>
 
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they'll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart -->
-  <!-- nav section -->
-  <nav>
-    <ul>
+  <ul>
     <div class="nav-brand">
       <a>Sneakers</a>
     </div>
     
-      <li><a href="#">Collections</a></li>
-      <li><a href="#">Men</a></li>
-      <li><a href="#">Women</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="nav-cart">
-        <a href="#"><img src="./images/icon-cart.svg" alt="Favicon"></a>
-        <a href="#"><img src="./images/image-avatar.png" alt="Cart"></a>
-        
-      </div>
-  </nav>
-<main>
+    <li><a href="#">Collections</a></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 
-<div class="lightbox-section">
-  
-  <div class="lightbox">
-    <div class="modal-content">
-    
+  <div class="nav-cart">
+    <a href="#"><img src="./images/icon-cart.svg" alt="Favicon"></a>
+    <a href="#"><img src="./images/image-avatar.png" alt="Cart"></a>
+  </div>
+
+</nav>
+
+<!-- main body section -->
+<main>
+<div class="container-fluid mt-4">
+ <div class="row">
+  <div class="lightbox-section col-6">
+      <div class="modal-content mb-2 ">
+        
         <div class="mySlides">
           <div class="numbertext">1 / 4</div>
-          <img src="images/image-product-1.jpg">
+          <img src="images/image-product-1.jpg" class="img-fluid">
         </div>
     
         <div class="mySlides">
           <div class="numbertext">2 / 4</div>
-          <img src="images/image-product-2.jpg">
+          <img src="images/image-product-2.jpg" class="img-fluid">
         </div>
     
         <div class="mySlides">
           <div class="numbertext">3 / 4</div>
-          <img src="images/image-product-3.jpg">
+          <img src="images/image-product-3.jpg" class="img-fluid">
         </div>
     
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-          <img src="images/image-product-4.jpg">
+          <img src="images/image-product-4.jpg" class="img-fluid">
         </div>
-    </div>
-        <!-- Next/previous controls -->
-        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-    
-  
-    
-        <!-- Thumbnail image controls -->
-      <div class="underscroll">
-          <div class="column">
-              <img class="demo" src="images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)" alt="Nature">
+      </div>
+
+            <!-- Thumbnail image controls -->
+      <div class="underscroll row">
+          <div class="column col-3">
+              <img class="demo img-fluid" src="images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)" alt="Nature">
           </div>
       
-          <div class="column">
-              <img class="demo" src="images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)" alt="Snow">
+          <div class="column col-3">
+              <img class="demo img-fluid" src="images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)" alt="Snow">
           </div>
       
-          <div class="column">
-              <img class="demo" src="images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)" alt="Mountains">
+          <div class="column col-3">
+              <img class="demo  img-fluid" src="images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)" alt="Mountains">
           </div>
       
-          <div class="column">
-              <img class="demo" src="images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)" alt="Lights">
+          <div class="column col-3">
+              <img class="demo img-fluid" src="images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)" alt="Lights">
           </div>
       </div>
-    
-   </div> 
+        
+  </div> 
+        
+  <div class="description col-6">
+      
+      <h2>Sneaker company</h2>
 
+      <h1>Fall Limited Edition<br> Sneakers</h1>
 
+      <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they'll withstand everything the weather can offer.
+      </p>
+      
+        <div class="price">
+          <h3>$125.00 </h3>
+          <h4>50%</h4>
+        </div>
 
+        <div>
+          <h6>$250.00</h6>
+        </div>
 
-
-
+        <div class="counter">
+          <div class="count">
+              <p><a href="#"><img src="./images/icon-minus.svg" alt="Favicon"></a></p>
+              <p>0</p>
+              <p><a href="#"><img src="./images/icon-plus.svg" alt="Favicon"></a></p>
+          </div>
+          
+          <div class="add-cart">
+              <button class="btn-outline-dark text-light"><a href="#"><img src="./images/icon-cart.svg" alt="Cart"></a>   add to cart</button>
+          </div>
+        </div>
+  </div>
+ </div>
 </div>
-    
-    <div class="description">
-     
-     <h2>Sneaker company</h2>
-
-     <h1>Fall Limited Edition<br> Sneakers</h1>
-
-     <p>
-        These low-profile sneakers are your perfect casual wear companion. Featuring a 
-        durable rubber outer sole, they'll withstand everything the weather can offer.
-     </p>
-     
-      <div class="price">
-        <h3>$125.00 </h3>
-         <h4>50%</h4>
-      </div>
-
-      <div>
-       <h6>$250.00</h6>
-      </div>
-
-      <div class="counter">
-        <div class="count">
-            <p><a href="#"><img src="./images/icon-minus.svg" alt="Favicon"></a></p>
-            <p>0</p>
-            <p><a href="#"><img src="./images/icon-plus.svg" alt="Favicon"></a></p>
-        </div>
-        
-        <div class="add-cart">
-            <button><a href="#"><img src="./images/icon-cart.svg" alt="Cart"></a>   add to cart</button>
-        </div>
-        
-      </div>
-
-    </div>
-
-
 </main>
 
   <div class="footer">
