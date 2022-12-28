@@ -71,10 +71,12 @@ subtract.addEventListener('click', (e) =>{
     output.innerText = result
 })
 
-
-
-
 cart.addEventListener('click', (e)  => {
     e.preventDefault()
     output.innerText = 0
+    const notification =  document.getElementById("notification")
+    console.log(notification)
+    notification.classList.add( "translate-middle", "bg-danger", "border", "border-light", "rounded-circle")
+    notification.innerText = "new"
 })
+
