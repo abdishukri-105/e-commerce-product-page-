@@ -37,5 +37,44 @@ function openModal() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
+    // captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+
+
+//   counter 
+
+//variables
+const add = document.querySelector("#add")
+const subtract = document.getElementById('subtract')
+let output = document.querySelector("#output")
+const cart = document.querySelector("#cart")
+console.log(add, subtract)
+
+
+// add eventlistener
+
+add.addEventListener('click', (e) => {
+    e.preventDefault()
+    let result = Number(output.innerText) + 1
+
+    output.innerText = result
+})
+
+subtract.addEventListener('click', (e) =>{
+    e.preventDefault()
+    let result = Number(output.innerText) - 1
+     
+    if (result < 0){
+        result = 0
+    }
+    output.innerText = result
+})
+
+
+
+
+cart.addEventListener('click', (e)  => {
+    e.preventDefault()
+    output.innerText = 0
+})
