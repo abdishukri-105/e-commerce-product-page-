@@ -105,8 +105,11 @@ li:hover a {
 } 
 
 
- 
+ img {
+  border-radius: 10%;
+ }
 
+ 
 
 
 
