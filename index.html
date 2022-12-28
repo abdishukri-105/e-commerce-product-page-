@@ -31,7 +31,7 @@
   </ul>
 
   <div class="nav-cart">
-    <a href="#"><img src="./images/icon-cart.svg" alt="Favicon"></a>
+    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="./images/icon-cart.svg" alt="Favicon"></a>
     <a href="#"><img src="./images/image-avatar.png" alt="Cart"></a>
   </div>
 
@@ -121,11 +121,36 @@
 </div>
 </main>
 
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">cart</h5>
+        
+      </div>
+      <div class="modal-body row">
+         <div class="col-3">
+          img
+         </div>
+         <div class="col-7">conte</div>
+         <button type="button" class="btn col-2"><img src="./images/icon-delete.svg" alt="delete"> </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <div class="footer">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
    <p> Coded by <a href="https://github.com/abdishukri-105" target= "_blank">abdishukri-105</a></p>
   </div>
 
   <script src="./src/index.js"></script>
+  <script src="./src/bootstrap.js"></script>
 </body>
 </html>
