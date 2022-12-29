@@ -1,7 +1,11 @@
 body {
-  padding-left: 150px;
-  padding-right: 150px;
+ padding-left: 16%;
+  padding-right: 16%; 
+  /* width: 80%; */
   height: 100vh;
+  display: block;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 *,
@@ -106,10 +110,10 @@ li:hover a {
 
 
  img {
-  border-radius: 10%;
+  border-radius: 5%;
  }
 
- 
+
 
 
 
@@ -221,12 +225,12 @@ img.hover-shadow {
 
 
   .footer {
-    /* position: fixed; */
+     /* position: fixed;  */
     bottom: 0;
-    width: 100%;
+    
     text-align: center;
     padding: 20px; 
-    /* border-top:1px solid black ; */
+     /* border-top:1px solid black ;  */
     display: flex;
     justify-content: space-evenly;
   }

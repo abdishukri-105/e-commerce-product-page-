@@ -48,6 +48,8 @@ function openModal() {
 const add = document.querySelector("#add")
 const subtract = document.getElementById('subtract')
 let output = document.querySelector("#output")
+let quantity =  document.querySelector("#quantity")
+let total = document.querySelector("#total")
 const cart = document.querySelector("#cart")
 console.log(add, subtract)
 
@@ -57,8 +59,9 @@ console.log(add, subtract)
 add.addEventListener('click', (e) => {
     e.preventDefault()
     let result = Number(output.innerText) + 1
-
+    
     output.innerText = result
+    calculateAmount()
 })
 
 subtract.addEventListener('click', (e) =>{
@@ -80,3 +83,16 @@ cart.addEventListener('click', (e)  => {
     notification.innerText = "new"
 })
 
+const  calculateAmount = () => {
+    let amount = Number(quantity.innerText) + 1
+
+    quantity.innerText = amount
+   
+     
+     let price = document.querySelector("#price")
+     price = 125.00
+     let totalAmount = price * amount
+
+     total.innerText = totalAmount
+
+}
