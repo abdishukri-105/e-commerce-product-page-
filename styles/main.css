@@ -104,7 +104,9 @@ li:hover a {
   flex-basis: 22%;
 }
 
-
+.slides img {
+  width: 100%;
+}
 img {
   border-radius: 10%;
  }
@@ -201,37 +203,54 @@ h2 {
  }
 
   /* responsive to mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 575px) {
    body {
-    margin: 0;
+    margin-left:10px;
     padding: 0;
-    width: 100%;
+    width: 90%;
+    box-sizing: border-box;
    }
   .cart-section {
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 40px;
   }
 
   .counter, .cart-button{
     width: 100%;
     margin: 4px;
+   
   }
   
   .main-content {
     display:flex;
     flex-flow: column;
     justify-content:space-between;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   
+  .lightbox, .description {
+    width: 100%;
+    margin: 10px;
+  }
 
   li {
     display: none;
   }
+  nav {
+    margin-left: 10px;
+  }
+  .underscroll {
+    display: none;
+  }
+  .slides img{
+     width: fit-content;
+     border-radius: 0%;
+  }
 
-
-
+  .nav-brand {
+    font-weight: bolder;
+  }
 }
 
   
