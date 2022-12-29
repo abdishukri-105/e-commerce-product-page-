@@ -94,5 +94,5 @@ const  calculateAmount = () => {
      let totalAmount = price * amount
 
      total.innerText = totalAmount
-
+    
 }
